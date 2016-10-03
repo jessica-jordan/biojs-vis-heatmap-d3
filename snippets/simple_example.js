@@ -3,13 +3,20 @@ var app = require("biojs-vis-heatmap-d3");
 var xhr = require("xhr");
 xhr("./data/dummy.json", function(err,resp,data){
   var jsonData = JSON.parse(data);
+  var sampleData = jsonData;
   console.log(jsonData);
   var instance = new app({
-    jsonData: jsonData, 
+    jsonData: sampleData, 
     user_defined_config: {
-      colorLow: 'green',
+      colorLow: 'black',
       colorMed: 'white',
       colorHigh: 'red'
+    },
+    canvas_margin: {
+      top: 300,
+      bottom: 10,
+      left: 20,
+      bottom: 1200 // not sure how to access that config...
     },
     target: yourDiv.id
   });

@@ -20,7 +20,7 @@
       "url": "https://github.com/gyachdav/biojs-vis-heatmap-d3/blob/master/LICENSE"
     }
   ],
-  "main": "lib/biojs-vis-heatmap-d3",
+  "main": "lib/index.js",
   "scripts": {
     "build": "gulp build",
     "build-browser": "gulp build-browser",
